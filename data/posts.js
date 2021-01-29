@@ -1,0 +1,26 @@
+export const POSTS = [{
+  title: 'SOY DINAMO El traller',
+  description: 'descripcion de prueba',
+  tags: ['backend', 'frontend'],
+  srcImage: '/img/marioelbuho.jpg',
+  srcAlt: 'El alt del mario',
+  body: 'Hola soy el Mario y meto navajazos por hOnda a diestro y siniestro'
+},
+{
+  title: 'El miguel anghel',
+  description: 'descripcion de prueba2',
+  tags: ['devops', 'design'],
+  srcImage: '/img/marioelbuho.jpg',
+  srcAlt: 'El alt del miguellhangel',
+  body: 'Hola soy el Miguel y meto navajazos por hOnda a diestro y siniestro'
+},
+{
+  title: 'Alejandro el camello de benicarlo',
+  description: 'fumador pasivo activo reactivo',
+  tags: ['backend', 'frontend'],
+  srcImage: '/img/marioelbuho.jpg',
+  srcAlt: 'El alt del mario',
+  body: 'Hola soy el alejandro y vendo droga a diestro y siniestro'
+}
+
+]
