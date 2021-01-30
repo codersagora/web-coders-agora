@@ -6,7 +6,7 @@ export const Post = ({ post }) => {
 
   return (
     <>
-      <div className='post mb-16 rounded-2xl overflow-hidden border-black border-opacity-10 border-solid border-2  transform hover:translate-x-0.5 hover:-translate-y-0.5'>
+      <div className='post mb-16 rounded-2xl overflow-hidden border-black border-opacity-10 border-solid border-2 transform hover:translate-x-0.5 hover:-translate-y-0.5'>
         <div className='post__image-wrapper relative w-full h-52'>
           <Image
             className='post__image'
