@@ -1,10 +1,29 @@
-import { Wrapper } from "../layout/Wrapper"
-import { BlogLayout } from "../layout/BlogLayout"
+// LAYOUTS
+import { Wrapper } from 'layout/Wrapper'
+import { BlogLayout } from 'layout/BlogLayout'
 
-export default function Blog() {
-    return (
-        <Wrapper nombre="Ramon">
-            <BlogLayout/>
-        </Wrapper>
-    )
+// COMPONENTS
+import { Post } from 'components/blog/Post'
+
+// MOCKUP DATA
+import { POSTS } from 'data/posts'
+
+export default function Blog () {
+  const getPost = () => {
+    return POSTS.map((post, i) => <Post key={i} post={post} />)
+  }
+  return (
+    <Wrapper>
+      <BlogLayout>
+        {/* BLOG POSTS */}
+        <div className='post '>
+          {getPost()}
+        </div>
+        <div className='categories'>
+          Mario
+        </div>
+      </BlogLayout>
+    </Wrapper>
+
+  )
 }

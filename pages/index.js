@@ -14,7 +14,7 @@ export default function Home () {
         <section className='px-16 py-4'>
           <TextPanel
             title='¿Qué es coders agora?'
-            body='Lorem ipsum mis muiertos cuatro pastillas me metoe sta noche'
+            body='Una comunidad de progamador_s donde compartir conocimientos, experiencias y consejos. Con la principal misión de ayudar a nuevos programador_s y acercarlos a la realidad del mundo laboral.'
 
           />
         </section>

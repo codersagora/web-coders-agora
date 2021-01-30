@@ -1,5 +1,5 @@
 export const POSTS = [{
-  title: 'SOY DINAMO El traller',
+  title: 'El traller',
   description: 'descripcion de prueba',
   tags: ['backend', 'frontend'],
   srcImage: '/img/marioelbuho.jpg',
