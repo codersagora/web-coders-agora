@@ -11,7 +11,7 @@ export const Header = (props) => {
 
       {router.pathname === href
         ? <h1 className='inline'>{router.pathname.slice(1).split('/')}</h1>
-        : <Image src='/img/Coders’ Agora.svg' alt='coders-agora-text-logo' width={500} height={height} />}
+        : <Image src='/img/logo.svg' alt='coders-agora-text-logo' width={500} height={height} />}
 
     </div>
   )
