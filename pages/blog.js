@@ -9,21 +9,21 @@ import { Post } from 'components/blog/Post'
 import { POSTS } from 'data/posts'
 
 export default function Blog () {
-  const getPost = () => {
+  const getPosts = () => {
     return POSTS.map((post, i) => <Post key={i} post={post} />)
   }
   return (
     <Wrapper>
       <BlogLayout>
         {/* BLOG POSTS */}
-        <div className='post '>
-          {getPost()}
+        <div className='posts grid grid-cols-2 '>
+          {getPosts()}
         </div>
+
         <div className='categories'>
           Mario
         </div>
       </BlogLayout>
     </Wrapper>
-
   )
 }
