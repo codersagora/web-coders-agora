@@ -3,11 +3,11 @@ import { PostCategories } from './PostCategories'
 
 export const Post = ({ post }) => {
   const { srcImage, srcAlt, fecha, title, tags, description } = post
-
   return (
     <>
       <div className='post mb-16 rounded-2xl overflow-hidden border-black border-opacity-10 border-solid border-2 transform hover:translate-x-0.5 hover:-translate-y-0.5'>
         <div className='post__image-wrapper relative w-full h-52'>
+          <PostCategories className='absolute left-4 bottom-4 z-10' tags={tags} />
           <Image
             className='post__image'
             src={srcImage}
@@ -19,7 +19,6 @@ export const Post = ({ post }) => {
           <div className='post__body-text'>
             <p>{fecha}</p>
             <h4>{title}</h4>
-            <PostCategories tags={tags} />
             <p className='text-gray-400'>{description}</p>
           </div>
           <div className='image-wrapper relative overflow-hidden flex items-center justify-center rounded-full'>
@@ -31,6 +30,7 @@ export const Post = ({ post }) => {
       <style jsx>{`
         .post {
           transition: transform 0.5s ease;
+          
         }
 
         .image-wrapper {
