@@ -8,7 +8,7 @@ import { Post } from 'components/blog/Post'
 // MOCKUP DATA
 import { POSTS } from 'data/posts'
 
-export default function Blog () {
+export default function blog () {
   const getPost = () => {
     return POSTS.map((post, i) => <Post key={i} post={post} />)
   }

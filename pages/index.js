@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { Wrapper } from 'layout/Wrapper'
 import { Header } from 'components/Header'
 import { TextPanel } from 'components/TextPanel'
@@ -8,7 +7,7 @@ export default function Home () {
     <>
       <Wrapper>
         <section>
-          <Header height={100} width={100}/>
+          <Header height={100} width={100} />
         </section>
         <section className='px-16 py-4'>
           <TextPanel

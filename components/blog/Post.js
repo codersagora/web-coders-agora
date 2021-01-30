@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { PostCategories } from './PostCategories'
 
 export const Post = ({ post }) => {
-  const { srcImage, srcAlt, title, tags, description } = post
+  const { srcImage, srcAlt, fecha, title, tags, description } = post
 
   return (
     <>
@@ -15,8 +15,9 @@ export const Post = ({ post }) => {
             layout='fill'
           />
         </div>
-        <div className='post__body px-4 pt-8 pb-2'>
+        <div className='post__body px-4 pt-5 pb-2'>
           <div className='post__body-text'>
+            <p>{fecha}</p>
             <h4>{title}</h4>
             <PostCategories tags={tags} />
             <p className='text-gray-400'>{description}</p>

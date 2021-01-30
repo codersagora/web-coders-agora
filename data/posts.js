@@ -1,6 +1,7 @@
 export const POSTS = [{
   title: 'El traller',
   description: 'descripcion de prueba',
+  fecha: '20 Febrero 2021',
   tags: ['backend', 'frontend'],
   srcImage: '/img/marioelbuho.jpg',
   srcAlt: 'El alt del mario',
@@ -9,6 +10,7 @@ export const POSTS = [{
 {
   title: 'El miguel anghel',
   description: 'descripcion de prueba2',
+  fecha: '20 Febrero 2021',
   tags: ['devops', 'design'],
   srcImage: '/img/marioelbuho.jpg',
   srcAlt: 'El alt del miguellhangel',
@@ -17,6 +19,7 @@ export const POSTS = [{
 {
   title: 'Alejandro el camello de benicarlo',
   description: 'fumador pasivo activo reactivo',
+  fecha: '20 Febrero 2021',
   tags: ['backend', 'frontend'],
   srcImage: '/img/marioelbuho.jpg',
   srcAlt: 'El alt del mario',
