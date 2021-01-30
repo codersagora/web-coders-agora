@@ -5,7 +5,7 @@ export const Post = ({ post }) => {
   const { srcImage, srcAlt, fecha, title, tags, description } = post
   return (
     <>
-      <div className='post mb-16 rounded-2xl overflow-hidden border-black border-opacity-10 border-solid border-2 '>
+      <div className='post mb-16 rounded-2xl overflow-hidden px-4 py-2'>
         <div className='post__image-wrapper relative w-full h-52'>
           <div className='post-overlay' />
           <Image
@@ -18,9 +18,9 @@ export const Post = ({ post }) => {
         </div>
         <div className='post__body px-4 pt-5 pb-2'>
           <div className='post__body-text'>
-            <p>{fecha}</p>
-            <h4>{title}</h4>
-            <p className='text-gray-400'>{description}</p>
+            <p className='text-ca-light'>{fecha}</p>
+            <h4 className='text-ca-black hover:text-ca-main-agora'>{title}</h4>
+            <p className='text-ca-text-black'>{description}</p>
           </div>
         </div>
       </div>
@@ -29,8 +29,6 @@ export const Post = ({ post }) => {
           transition: transform 0.5s ease;  
         }
 
-      
-        
         .post-overlay {
           position: absolute;
           top: 0;
