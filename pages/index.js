@@ -1,15 +1,14 @@
 import Link from 'next/link'
 import { Wrapper } from 'layout/Wrapper'
-import { Hero } from 'components/Hero'
+import { Header } from 'components/Header'
 import { TextPanel } from 'components/TextPanel'
 
 export default function Home () {
   return (
     <>
-
       <Wrapper>
         <section>
-          <Hero />
+          <Header height={100} width={100}/>
         </section>
         <section className='px-16 py-4'>
           <TextPanel
