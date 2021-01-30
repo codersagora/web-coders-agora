@@ -5,15 +5,16 @@ export const Post = ({ post }) => {
   const { srcImage, srcAlt, fecha, title, tags, description } = post
   return (
     <>
-      <div className='post mb-16 rounded-2xl overflow-hidden border-black border-opacity-10 border-solid border-2 transform hover:translate-x-0.5 hover:-translate-y-0.5'>
+      <div className='post mb-16 rounded-2xl overflow-hidden border-black border-opacity-10 border-solid border-2 '>
         <div className='post__image-wrapper relative w-full h-52'>
-          <PostCategories className='absolute left-4 bottom-4 z-10' tags={tags} />
+          <div className='post-overlay' />
           <Image
             className='post__image'
             src={srcImage}
             alt={srcAlt}
             layout='fill'
           />
+          <PostCategories className='absolute left-4 bottom-4 rounded-lg z-10 bg-black bg-opacity-20 px-4' tags={tags} />
         </div>
         <div className='post__body px-4 pt-5 pb-2'>
           <div className='post__body-text'>
@@ -21,31 +22,34 @@ export const Post = ({ post }) => {
             <h4>{title}</h4>
             <p className='text-gray-400'>{description}</p>
           </div>
-          <div className='image-wrapper relative overflow-hidden flex items-center justify-center rounded-full'>
-            <div className='overlay' />
-            <Image className='avatar-image rounded-full' src='/img/ramoncin.jpeg' width={100} height={100} />
-          </div>
         </div>
       </div>
       <style jsx>{`
         .post {
-          transition: transform 0.5s ease;
+          transition: transform 0.5s ease;  
+        }
+
+      
+        
+        .post-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          opacity: 0.25;
+          height: 100%;
+          background: linear-gradient(85.88deg, #141414 0%, rgba(231, 231, 231, 0) 134.43%);
+          transition: opacity 0.3s ease;
+          z-index: 5;
+        }
+
+        .post:hover .post-overlay {
+          opacity: 0.4;
           
         }
 
         .image-wrapper {
           height: fit-content;
-        }
-
-        .overlay {
-          content: "";
-          position: absolute;
-          height: 100%;
-          width: 100%;
-          z-index: 10;
-          background: rgb(145,78,194);
-          background: linear-gradient(90deg, rgba(145,78,194,1) 0%, rgba(222,194,255,1) 100%);
-          mix-blend-mode: soft-light ;
         }
         
         .post__body {
