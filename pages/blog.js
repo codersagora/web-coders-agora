@@ -9,9 +9,7 @@ import { Post } from 'components/blog/Post'
 import { POSTS } from 'data/posts'
 
 export default function Blog () {
-
   const getPosts = () => {
-
     return POSTS.map((post, i) => <Post key={i} post={post} />)
   }
   return (
