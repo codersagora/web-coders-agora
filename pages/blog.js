@@ -4,6 +4,7 @@ import { BlogLayout } from 'layout/BlogLayout'
 
 // COMPONENTS
 import { Post } from 'components/blog/Post'
+import { Postfeature } from 'components/blog/Postfeature'
 import { Header } from 'components/Header'
 
 // MOCKUP DATA
@@ -13,7 +14,7 @@ import { CATEGORIES } from 'data/categories'
 export default function Blog () {
   const getPosts = () => {
     return POSTS.map((post, i) => {
-      return i === 0 ? <div className='col-start-1 col-span-2'><Post key={i} post={post} /></div> : <Post key={i} post={post} />
+      return i === 0 ? <Postfeature key={i} post={post} /> : <Post key={i} post={post} />
     })
   }
 
@@ -23,7 +24,7 @@ export default function Blog () {
 
   return (
     <Wrapper>
-      <Header height={100} width={100} />
+      <Header height={100} width={100} href='blog' desc='Comunidad del copon' />
       <BlogLayout>
         {/* BLOG POSTS */}
         <div className='posts grid grid-cols-2 '>
