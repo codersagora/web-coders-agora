@@ -20,12 +20,14 @@ export const Header = (props) => {
       </div>
       {
       pathname === href
-        ? <div>
-          <h1 className='inline align-middle  text-ca-text-black text-5xl'>
-            {capitalize(pathname)}
-          </h1>
-          <p className='text-4xl text-ca-lighter-black font-bold'>{desc}</p>
+        ? (
+          <div>
+            <h1 className='inline align-middle  text-ca-text-black text-5xl'>
+              {capitalize(pathname)}
+            </h1>
+            <p className='text-4xl text-ca-lighter-black font-bold'>{desc}</p>
           </div>
+          )
         : <Image src='/img/typoLogo.svg' alt='coders-agora-text-logo' width={500} height={height} />
       }
 
