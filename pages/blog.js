@@ -4,23 +4,35 @@ import { BlogLayout } from 'layout/BlogLayout'
 
 // COMPONENTS
 import { Post } from 'components/blog/Post'
+import { Header } from 'components/Header'
 
 // MOCKUP DATA
 import { POSTS } from 'data/posts'
+import { CATEGORIES } from 'data/categories'
 
 export default function Blog () {
   const getPosts = () => {
-    return POSTS.map((post, i) => <Post key={i} post={post} />)
+    return POSTS.map((post, i) => {
+      return i === 0 ? <div className='col-start-1 col-span-2'><Post key={i} post={post} /></div> : <Post key={i} post={post} />
+    })
   }
+
+  const getCategories = () => {
+    return CATEGORIES.map(({ title }, i) => { return <p className='text-ca-text-black hover:text-ca-main-agora' key={i}>{title}</p> })
+  }
+
   return (
     <Wrapper>
+      <Header height={100} width={100} />
       <BlogLayout>
         {/* BLOG POSTS */}
         <div className='posts grid grid-cols-2 '>
           {getPosts()}
         </div>
-        <div className='categories'>
-          Mario
+
+        <div className='ml-10 categories'>
+          <h5 className='mb-5 text-ca-text-black '>Categories</h5>
+          {getCategories()}
         </div>
       </BlogLayout>
     </Wrapper>

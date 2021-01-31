@@ -1,7 +1,7 @@
 export const BlogLayout = ({ children }) => {
   return (
     <>
-      <div className='grid-blog py-4 px-16'>
+      <div className='grid-blog '>
         {children}
       </div>
       <style jsx>{`

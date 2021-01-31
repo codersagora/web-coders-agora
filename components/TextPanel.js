@@ -7,13 +7,9 @@ export const TextPanel = ({ title, body, full }) => {
         <div className='text-panel__background bg-pink-100 h-full w-3/4 absolute top-0 -left-8 z-0 ' />
       </div>
       <style jsx>{`
-
         .text-panel__background {
           z-index: -10;
         }
-        
-
-
         `}
       </style>
     </>

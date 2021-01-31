@@ -13,7 +13,6 @@ export default function Home () {
           <TextPanel
             title='¿Qué es coders agora?'
             body='Una comunidad de progamador_s donde compartir conocimientos, experiencias y consejos. Con la principal misión de ayudar a nuevos programador_s y acercarlos a la realidad del mundo laboral.'
-
           />
         </section>
       </Wrapper>
