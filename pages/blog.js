@@ -24,7 +24,7 @@ export default function Blog () {
 
   return (
     <Wrapper>
-      <Header height={80} width={80} href='blog' desc='Comunidad del copon' />
+      <Header height={80} width={80} className='mb-6 lg:px-16 py-4' desc='Comunidad del copon' />
       <BlogLayout>
         {/* BLOG POSTS */}
         <div className='posts grid grid-cols-2 '>
