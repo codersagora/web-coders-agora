@@ -9,7 +9,9 @@ import { Post } from 'components/blog/Post'
 import { POSTS } from 'data/posts'
 
 export default function Blog () {
+
   const getPosts = () => {
+
     return POSTS.map((post, i) => <Post key={i} post={post} />)
   }
   return (
@@ -19,7 +21,6 @@ export default function Blog () {
         <div className='posts grid grid-cols-2 '>
           {getPosts()}
         </div>
-
         <div className='categories'>
           Mario
         </div>
