@@ -23,7 +23,7 @@ export default function Blog () {
 
   return (
     <Wrapper>
-      <Header height={100} width={100} />
+      <Header height={80} width={80} />
       <BlogLayout>
         {/* BLOG POSTS */}
         <div className='posts grid grid-cols-2 '>
