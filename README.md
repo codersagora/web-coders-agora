@@ -34,6 +34,9 @@ Standard es dependencia del proyecto, así que no hará falta que lo instales en
 Ahora bien, tendrás que instalar el siguiente complemento:
 
 [StandardJS](https://marketplace.visualstudio.com/items?itemName=chenxsan.vscode-standardjs)
+```json
+"javascript.validate.enable": false 
+```
 
 > 💡  Importante seguir los pasos de instalación del plugin
 
