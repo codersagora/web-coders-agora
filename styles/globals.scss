@@ -4,6 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --text-black: #2D2D2D;
+  --lighter-black: #888888;
+  --main: #8939C8;
+  --light: #F5E5FF;
+  --secondary-light: #F9F0FF;
+}
+
 html {
    font-size: 100%;
 } /*16px*/
