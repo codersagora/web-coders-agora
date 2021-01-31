@@ -9,6 +9,7 @@ module.exports = {
         'ca-lighter-black': 'var(--lighter-black)',
         'ca-main-agora': 'var(--main)',
         'ca-light': 'var(--light)',
+        'ca-light-version-2': 'var(--light-version-2)',
         'ca-secondary-light': 'var(--secondary-light)',
         'ca-text-black': 'var(--text-black)'
       },
