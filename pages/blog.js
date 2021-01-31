@@ -29,10 +29,15 @@ export default function Blog () {
         <div className='posts grid grid-cols-2 '>
           {getPosts()}
         </div>
+<<<<<<< HEAD
 
         <div className='ml-10 categories'>
           <h5 className='mb-5 text-ca-text-black '>Categories</h5>
           {getCategories()}
+=======
+        <div className='categories'>
+          Mario
+>>>>>>> cfd5c71b7e67f6bd3d26710078af6673200012a0
         </div>
       </BlogLayout>
     </Wrapper>
