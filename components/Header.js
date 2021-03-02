@@ -7,10 +7,9 @@ export const Header = (props) => {
   const router = useRouter()
 
   const pathname = router.pathname.substring(1)
-  console.log(pathname)
 
   return (
-    <div className={`flex ${className}`}>
+    <div className={`flex mb-20 ${className && ''}`}>
       <div className='mr-10'>
         <Link href='/'>
           <a>

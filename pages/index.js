@@ -1,4 +1,4 @@
-import { Wrapper } from 'layout/Wrapper'
+import { Section } from 'layout/Section'
 import { Header } from 'components/Header'
 import { TextPanel } from 'components/TextPanel'
 
@@ -17,10 +17,9 @@ import { ICONCARD } from 'data/iconcard'
 export default function Home () {
   return (
     <>
-      <Wrapper>
-        <Header className='px-6 lg:px-16 py-4' height={100} width={100} />
-
-        <section className='px-6 lg:px-16 py-4 mb-8'>
+      <Section>
+        <Header height={100} width={100} />
+        <section className='mb-8'>
           <Row half>
             <TextPanel
               title='¿Qué es coders agora?'
@@ -49,7 +48,7 @@ export default function Home () {
             </Row>
           </div>
         </section>
-      </Wrapper>
+      </Section>
       <style jsx>{`
       h1 {
         font-size: 5rem;

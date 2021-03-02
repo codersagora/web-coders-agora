@@ -1,5 +1,5 @@
 // LAYOUTS
-import { Wrapper } from 'layout/Wrapper'
+import { Wrapper } from 'layout/Section'
 import { BlogLayout } from 'layout/BlogLayout'
 
 // COMPONENTS
@@ -23,7 +23,7 @@ export default function Blog () {
   }
 
   return (
-    <Wrapper>
+    <Section>
       <Header height={80} width={80} className='mb-6 lg:px-16 py-4' desc='Comunidad del copon' />
       <BlogLayout>
         {/* BLOG POSTS */}
