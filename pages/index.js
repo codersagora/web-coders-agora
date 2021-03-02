@@ -1,24 +1,29 @@
 import { Section } from 'layout/Section'
+import { Row } from 'layout/Row'
+
 import { Header } from 'components/Header'
 import { TextPanel } from 'components/TextPanel'
-
-import { Row } from 'layout/Row'
 import { GridHome } from 'components/GridHome'
-
 import { IconCard } from 'components/IconCard'
-// SVGs
 import Comparte from 'components/Icons/Comparte'
 import Share from 'components/Icons/Share'
 import Crece from 'components/Icons/Crece'
 
-// DATA
+import Head from 'next/head'
 
+// DATA
 import { ICONCARD } from 'data/iconcard'
+
 export default function Home () {
   return (
     <>
+      <Head>
+        <title>Coders' Agora Community</title>
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        {/* //TODO: Add SEO Tags */}
+
+      </Head>
       <Section>
-        <Header height={100} width={100} />
         <section className='mb-8'>
           <Row half>
             <TextPanel
