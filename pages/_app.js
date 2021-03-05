@@ -4,6 +4,7 @@ import { Header } from 'components/Header'
 
 // motion
 import { AnimatePresence, motion } from 'framer-motion'
+import { Footer } from 'components/Footer'
 
 function MyApp ({ Component, pageProps }) {
   return (
@@ -12,6 +13,7 @@ function MyApp ({ Component, pageProps }) {
       <motion.div exit={{ opacity: 0 }}>
         <Component {...pageProps} />
       </motion.div>
+      <Footer />
     </AnimatePresence>
   )
 }

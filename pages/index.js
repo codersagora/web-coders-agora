@@ -1,15 +1,17 @@
+// NEXT
+import Head from 'next/head'
+
+// LAYOUT
 import { Section } from 'layout/Section'
 import { Row } from 'layout/Row'
 
-import { Header } from 'components/Header'
+// Components
 import { TextPanel } from 'components/TextPanel'
 import { GridHome } from 'components/GridHome'
-import { IconCard } from 'components/IconCard'
+import { IconCard } from 'components/cards/IconCard'
 import Comparte from 'components/Icons/Comparte'
 import Share from 'components/Icons/Share'
 import Crece from 'components/Icons/Crece'
-
-import Head from 'next/head'
 
 // DATA
 import { ICONCARD } from 'data/iconcard'
@@ -27,7 +29,7 @@ export default function Home () {
         <section className='mb-8'>
           <Row half>
             <TextPanel
-              title='¿Qué es coders agora?'
+              title={'¿Qué es Coders\' Agora?'}
               body='Una comunidad de progamador_s donde compartir conocimientos, experiencias y consejos. Con la principal misión de ayudar a nuevos programador_s y acercarlos a la realidad del mundo laboral.'
               full
             />
@@ -45,12 +47,8 @@ export default function Home () {
         {/* className='md:mx-36' */}
         <section>
           <h3 className='text-ca-text-black mb-10'>Únete, descubre y crece con nosotr_s</h3>
-          <div className='md:mx-24'>
-            <Row half>
-              {
-              ICONCARD.map(({ src, anchor, body }, key) => { return <IconCard key={key} srcImg={src} anchor={anchor} body={body} /> })
-            }
-            </Row>
+          <div className='grid md:grid-cols-2 gap-8'>
+            {ICONCARD.map(({ src, href, body }, key) => { return <IconCard key={key} srcImg={src} href={href} body={body} /> })}
           </div>
         </section>
       </Section>

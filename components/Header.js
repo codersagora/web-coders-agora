@@ -21,7 +21,7 @@ export const Header = (props) => {
       pathname
         ? (
           <div>
-            <h1 className='inline capitalize align-middle text-ca-text-black'>
+            <h1 className='inline capitalize align-middle text-ca-black'>
               {pathname}
             </h1>
           </div>

@@ -1,21 +1,11 @@
 export const ICONCARD = [{
-  src: '/img/telegram.png',
-  anchor: 'https://discord.com/',
+  src: '/img/logos/telegram.svg',
+  href: 'https://discord.com/',
   body: 'Bienvenido a mi discord'
 },
 {
-  src: '/img/telegram.png',
-  anchor: 'https://discord.com/',
-  body: 'Bienvenido a mi discord'
-},
-{
-  src: '/img/discord.png',
-  anchor: 'https://discord.com/',
-  body: 'Bienvenido a mi discord'
-},
-{
-  src: '/img/discord.png',
-  anchor: 'https://discord.com/',
+  src: '/img/logos/discord.svg',
+  href: 'https://discord.com/',
   body: 'Bienvenido a mi discord'
 }
 ]
