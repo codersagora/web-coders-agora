@@ -36,6 +36,6 @@ export default function Blog () {
           {getCategories()}
         </div>
       </BlogLayout>
-    </Wrapper>
+    </Section>
   )
 }
