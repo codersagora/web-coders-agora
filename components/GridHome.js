@@ -4,7 +4,7 @@ export const GridHome = () => {
   return (
     <div className='grid grid-cols-2 md:grid-cols-3 gap-8 md:mr-12'>
 
-      <div className='transform translate-x-12 md:col-span-1 col-span-2'>
+      <div className='transform md:translate-x-12 md:col-span-1 col-span-2'>
         <Card
           title='Publicaciones'
           body='Posts en nuestro Blog y videos en nuestro canal'
@@ -12,7 +12,7 @@ export const GridHome = () => {
         />
       </div>
 
-      <div className='transform translate-x-12 md:col-span-1 col-span-2'>
+      <div className='transform md:translate-x-12 md:col-span-1 col-span-2'>
         <Card
           title='Actividades Conjuntas'
           body='Katas en Codewars, lecturas de libros en grupo, retos conjuntos...'
@@ -20,7 +20,7 @@ export const GridHome = () => {
         />
       </div>
 
-      <div className='transform translate-x-12 md:col-span-1 col-span-2'>
+      <div className='transform md:translate-x-12 md:col-span-1 col-span-2'>
         <Card
           title='Quedadas'
           body='Cuando se pueda, obviamente'
