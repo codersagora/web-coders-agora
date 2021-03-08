@@ -1,13 +1,31 @@
+import { useState } from 'react'
+
 import Image from 'next/image'
 
-export const Card = ({ title, emojiSrc }) => {
+export const Card = ({ title, body, emojiSrc }) => {
+  const [opened, setOpened] = useState(true)
+
   return (
     <>
-      <div className='card h-52 rounded-md border-black hover:border-ca-agora-pink-300 border-solid border-4 transition flex flex-col items-start relative p-4'>
+      <div
+        onClick={() => setOpened(!opened)}
+        className='card cursor-pointer h-52 rounded-md border-black hover:border-ca-agora-pink-300 border-solid border-4 transition flex flex-col items-start justify-between relative p-4 '
+      >
         <h5 className='text-ca-text-black'>{title}</h5>
-        <div className='image-wrapper absolute bottom-2 left-4'><Image height={70} width={70} src={emojiSrc} /></div>
+        <div className={` image-wrapper absolute bottom-2 left-4 ${opened ? 'show' : 'hide'}`}><Image height={70} width={70} src={emojiSrc} /></div>
+        <p className={!opened ? 'show' : 'hide'}>{body}</p>
       </div>
       <style jsx>{`
+
+        .show {
+          transition: opacity 0.3s ease-in;
+          opacity: 1;
+        }
+
+        .hide {
+          transition: opacity 0.2s ease-out;
+          opacity: 0;
+        }
 
         .card {
           box-shadow: -0.5rem 0.5rem 0 var(--agora-pink-50);

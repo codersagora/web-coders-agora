@@ -26,7 +26,7 @@ export default function Home () {
 
       </Head>
       <Section>
-        <section className='mb-8'>
+        <section className='mb-24'>
           <Row half>
             <TextPanel
               title={'¿Qué es Coders\' Agora?'}
@@ -45,7 +45,7 @@ export default function Home () {
           <GridHome />
         </section>
         {/* className='md:mx-36' */}
-        <section>
+        <section className='mb-24'>
           <h3 className='text-ca-text-black mb-10'>Únete, descubre y crece con nosotr_s</h3>
           <div className='grid md:grid-cols-2 gap-8'>
             {ICONCARD.map(({ src, href, body }, key) => { return <IconCard key={key} srcImg={src} href={href} body={body} /> })}

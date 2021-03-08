@@ -10,7 +10,11 @@ function MyApp ({ Component, pageProps }) {
   return (
     <AnimatePresence exitBeforeEnter>
       <Header height={100} width={100} />
-      <motion.div exit={{ opacity: 0 }}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
         <Component {...pageProps} />
       </motion.div>
       <Footer />
