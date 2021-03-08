@@ -1,5 +1,5 @@
 // LAYOUTS
-import { Wrapper } from 'layout/Section'
+import { Section } from 'layout/Section'
 import { BlogLayout } from 'layout/BlogLayout'
 
 // COMPONENTS
