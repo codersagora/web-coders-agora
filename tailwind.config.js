@@ -6,12 +6,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'ca-lighter-black': 'var(--lighter-black)',
-        'ca-main-agora': 'var(--main)',
-        'ca-light': 'var(--light)',
-        'ca-light-version-2': 'var(--light-version-2)',
-        'ca-secondary-light': 'var(--secondary-light)',
-        'ca-text-black': 'var(--text-black)'
+        'ca-black': '#2D2D2D',
+        'ca-gray': '#888888',
+        'ca-agora-pink': {
+          10: '#F9F0FF',
+          50: '#F5E5FF',
+          100: '#ddaefa',
+          300: '#8939C8'
+        }
       },
       gridTemplateColumns: {
         // Complex site-secific column configuration
