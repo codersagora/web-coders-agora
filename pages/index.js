@@ -30,7 +30,6 @@ export default function Home () {
           <Row half>
             <TextPanel
               title={'¿Qué es Coders\' Agora?'}
-              body='Una comunidad de progamador_s donde compartir conocimientos, experiencias y consejos. Con la principal misión de ayudar a nuevos programador_s y acercarlos a la realidad del mundo laboral.'
               full
             />
             <div className='flex flex-col items-center'>

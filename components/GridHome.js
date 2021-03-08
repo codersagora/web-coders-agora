@@ -15,7 +15,7 @@ export const GridHome = () => {
       <div className='transform translate-x-12 md:col-span-1 col-span-2'>
         <Card
           title='Actividades Conjuntas'
-          body='Catas en codewars, lecturas de libros en grupo, retos conjuntos...'
+          body='Katas en Codewars, lecturas de libros en grupo, retos conjuntos...'
           emojiSrc='/img/emoji/whale-wa.png'
         />
       </div>
