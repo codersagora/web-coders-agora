@@ -1,5 +1,5 @@
 import { Devto } from 'components/svgs/Devto'
-import { Twitter } from 'components/svgs/twitter'
+import { Twitter } from 'components/svgs/Twitter'
 import Image from 'next/image'
 import { Linkedin } from './svgs/Linkedin'
 
