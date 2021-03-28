@@ -11,6 +11,7 @@ function MyApp ({ Component, pageProps }) {
     <AnimatePresence exitBeforeEnter>
       <Header height={100} width={100} />
       <motion.div
+        key='wrapper'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
