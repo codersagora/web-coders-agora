@@ -22,7 +22,6 @@ export default function Home () {
       <Head>
         <title>Coders' Agora Community</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-        {/* //TODO: Add SEO Tags */}
 
       </Head>
       <Section>
