@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 export const Card = ({ title, body, emojiSrc }) => {
-  const [opened, setOpened] = useState(true)
+  const [opened, setOpened] = useState(false)
 
   return (
     <>
