@@ -20,8 +20,27 @@ export default function Home () {
   return (
     <>
       <Head>
+        {/* <!-- HTML Meta Tags --> */}
         <title>Coders' Agora Community</title>
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta name='description' content='Comunidad enfocada a mejorar la experiencia de aprendizaje de gente interesada en el desarrollo y diseño de productos digitales. ' />
+
+        {/* <!-- Google / Search Engine Tags --> */}
+        <meta itemprop='name' content="Coders' Agora Community" />
+        <meta itemprop='description' content='Comunidad enfocada a mejorar la experiencia de aprendizaje de gente interesada en el desarrollo y diseño de productos digitales. ' />
+        <meta itemprop='image' content='/img/og-image.jpg' />
+
+        {/* <!-- Facebook Meta Tags --> */}
+        <meta property='og:url' content='https://www.codersagora.org' />
+        <meta property='og:type' content='website' />
+        <meta property='og:title' content="Coders' Agora Community" />
+        <meta property='og:description' content='Comunidad enfocada a mejorar la experiencia de aprendizaje de gente interesada en el desarrollo y diseño de productos digitales. ' />
+        <meta property='og:image' content='/img/og-image.jpg' />
+
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:title' content="Coders' Agora Community" />
+        <meta name='twitter:description' content='Comunidad enfocada a mejorar la experiencia de aprendizaje de gente interesada en el desarrollo y diseño de productos digitales. ' />
+        <meta name='twitter:image' content='/img/og-image.jpg' />
 
       </Head>
       <Section>
