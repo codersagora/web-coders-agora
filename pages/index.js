@@ -21,31 +21,36 @@ export default function Home () {
     <>
       <Head>
         {/* <!-- HTML Meta Tags --> */}
-        <title>Coders' Agora Community</title>
+        <title>Comunidad Coders Agora </title>
         <meta name='description' content='Comunidad enfocada a mejorar la experiencia de aprendizaje de gente interesada en el desarrollo y diseño de productos digitales. ' />
+        <meta name='keywords' content='HTML, CSS, JavaScript, comunidad, programacion, developers, aprender, estudiar, estudiantes, comunidad de estudiantes, comunidad de programacion, futuro' />
+        <link rel='canonical' href='http://www.codersagora.org/' />
 
         {/* <!-- Google / Search Engine Tags --> */}
-        <meta itemprop='name' content="Coders' Agora Community" />
+        <meta itemprop='name' content='Comunidad Coders Agora' />
         <meta itemprop='description' content='Comunidad enfocada a mejorar la experiencia de aprendizaje de gente interesada en el desarrollo y diseño de productos digitales. ' />
         <meta itemprop='image' content='/img/og-image.jpg' />
 
         {/* <!-- Facebook Meta Tags --> */}
         <meta property='og:url' content='https://www.codersagora.org' />
         <meta property='og:type' content='website' />
-        <meta property='og:title' content="Coders' Agora Community" />
+        <meta property='og:title' content='Comunidad Coders Agora' />
         <meta property='og:description' content='Comunidad enfocada a mejorar la experiencia de aprendizaje de gente interesada en el desarrollo y diseño de productos digitales. ' />
         <meta property='og:image' content='/img/og-image.jpg' />
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name='twitter:card' content='summary_large_image' />
-        <meta name='twitter:title' content="Coders' Agora Community" />
+        <meta name='twitter:title' content='Comunidad Coders Agora' />
         <meta name='twitter:description' content='Comunidad enfocada a mejorar la experiencia de aprendizaje de gente interesada en el desarrollo y diseño de productos digitales. ' />
-        <meta name='twitter:image' content='/img/og-image.jpg' />
+        <meta name='twitter:image' content='https://www.codersagora.org/img/og-image.jpg' />
+        <meta name='twitter:site' content='@CodersAgora_org' />
 
       </Head>
       <Section>
         <section className='mb-24'>
           <Row half>
+            {/* Sorry is for SEO, we'll fix that right? */}
+            <h1 className='hidden'>Comunidad Coders Agora</h1>
             <TextPanel
               title={'¿Qué es Coders\' Agora?'}
               full
