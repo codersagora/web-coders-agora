@@ -1,7 +1,6 @@
 module.exports = {
-// purge: ['./pages/**/*.js', './components/**/*.js'],
-// TODO: Options safelist
-  purge: [],
+  mode: 'jit',
+  purge: ['./pages/**/*.js', './components/**/*.js', './layout/**/*.js'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
