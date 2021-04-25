@@ -23,7 +23,6 @@ export default function Home () {
         {/* <!-- HTML Meta Tags --> */}
         <title>Coders' Agora Community</title>
         <meta name='description' content='Comunidad enfocada a mejorar la experiencia de aprendizaje de gente interesada en el desarrollo y diseño de productos digitales. ' />
-        <html lang='es' xml:lang='es' xmlns='http://www.w3.org/1999/xhtml' />
 
         {/* <!-- Google / Search Engine Tags --> */}
         <meta itemprop='name' content="Coders' Agora Community" />
