@@ -5,7 +5,7 @@ export const IconCard = ({ srcImg, href, body }) => {
       <div className='border-black border-opacity-5 transform hover:border-ca-main-agora border-solid border transition hover:border-opacity-10 hover:translate-y-1 shadow-lg hover:shadow-md rounded-md flex items-center sm:items-end relative px-4 py-2'>
         <Image
           src={srcImg}
-          alt=''
+          alt='Join our community!'
           width={70}
           height={70}
         />

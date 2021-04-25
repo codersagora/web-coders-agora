@@ -13,7 +13,7 @@ export const Header = (props) => {
       <div className='mr-10'>
         <Link href='/'>
           <a>
-            <Image src='/img/FlattenedLogo.svg' alt='coders-agora-image-logo' width={width} height={height} />
+            <Image src='/img/FlattenedLogo.svg' alt='Coders Agora Logo, it is lovely' width={width} height={height} />
           </a>
         </Link>
       </div>

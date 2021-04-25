@@ -12,7 +12,7 @@ export const Card = ({ title, body, emojiSrc }) => {
         className='card cursor-pointer h-52 rounded-md border-black hover:border-ca-agora-pink-300 border-solid border-4 transition flex flex-col items-start justify-between relative p-4 '
       >
         <h5 className='text-ca-text-black'>{title}</h5>
-        <div className={` image-wrapper absolute bottom-2 left-4 ${opened ? 'show' : 'hide'}`}><Image height={70} width={70} src={emojiSrc} /></div>
+        <div className={` image-wrapper absolute bottom-2 left-4 ${opened ? 'show' : 'hide'}`}><Image height={70} width={70} alt='Cute Emoji Card, damn son it looks strange, but ok' src={emojiSrc} /></div>
         <p className={!opened ? 'show' : 'hide'}>{body}</p>
       </div>
       <style jsx>{`

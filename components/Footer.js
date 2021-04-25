@@ -8,7 +8,7 @@ export const Footer = () => {
     <>
       <div className='w-full py-4 bg-ca-black relative'>
         <div className='img-wrapper hidden md:block'>
-          <Image src='/img/FlattenedLogo.svg' height={70} width={70} />
+          <Image src='/img/FlattenedLogo.svg' alt='CodersAgora circle logo, it is cute' height={70} width={70} />
         </div>
         <div className='max-w-screen-xl text-sm m-auto text-white px-8 xl:px-0'>
           <h5 className='mb-4'>Contacta</h5>
