@@ -21,26 +21,26 @@ export default function Home () {
     <>
       <Head>
         {/* <!-- HTML Meta Tags --> */}
-        <title>Comunidad Coders Agora </title>
+        <title>Comunidad de programadores/as - Coders Agora</title>
         <meta name='description' content='Comunidad enfocada a mejorar la experiencia de aprendizaje de gente interesada en el desarrollo y diseño de productos digitales. ' />
         <meta name='keywords' content='HTML, CSS, JavaScript, comunidad, programacion, developers, aprender, estudiar, estudiantes, comunidad de estudiantes, comunidad de programacion, futuro' />
         <link rel='canonical' href='http://www.codersagora.org/' />
 
         {/* <!-- Google / Search Engine Tags --> */}
-        <meta itemprop='name' content='Comunidad Coders Agora' />
+        <meta itemprop='name' content="Comunidad de programadores/as - Coders' Agora" />
         <meta itemprop='description' content='Comunidad enfocada a mejorar la experiencia de aprendizaje de gente interesada en el desarrollo y diseño de productos digitales. ' />
         <meta itemprop='image' content='/img/og-image.jpg' />
 
         {/* <!-- Facebook Meta Tags --> */}
         <meta property='og:url' content='https://www.codersagora.org' />
         <meta property='og:type' content='website' />
-        <meta property='og:title' content='Comunidad Coders Agora' />
+        <meta property='og:title' content="Comunidad de programadores/as - Coders' Agora" />
         <meta property='og:description' content='Comunidad enfocada a mejorar la experiencia de aprendizaje de gente interesada en el desarrollo y diseño de productos digitales. ' />
         <meta property='og:image' content='/img/og-image.jpg' />
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name='twitter:card' content='summary_large_image' />
-        <meta name='twitter:title' content='Comunidad Coders Agora' />
+        <meta name='twitter:title' content="Comunidad de programadores/as - Coders' Agora" />
         <meta name='twitter:description' content='Comunidad enfocada a mejorar la experiencia de aprendizaje de gente interesada en el desarrollo y diseño de productos digitales. ' />
         <meta name='twitter:image' content='https://www.codersagora.org/img/og-image.jpg' />
         <meta name='twitter:site' content='@CodersAgora_org' />
