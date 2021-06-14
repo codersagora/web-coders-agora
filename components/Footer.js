@@ -2,6 +2,7 @@ import { Devto } from 'components/svgs/Devto'
 import { Twitter } from 'components/svgs/Twitter'
 import Image from 'next/image'
 import { Linkedin } from './svgs/Linkedin'
+import { Youtube } from './svgs/Youtube'
 
 export const Footer = () => {
   return (
@@ -14,9 +15,22 @@ export const Footer = () => {
           <h5 className='mb-4'>Contacta</h5>
           <div className='flex items-end justify-between'>
             <div className='flex'>
-              <div className='mr-4 opacity-60 transition-all transform hover:opacity-95 hover:scale-105'><a href='https://twitter.com/CodersAgora_org' target='blank'><Twitter fill='var(--agora-pink-10)' width='24' height='24' /></a></div>
-              <div className='mr-4 opacity-60 transition-all transform hover:opacity-95 hover:scale-105'><a href='dev.to'><Devto fill='var(--agora-pink-10)' width='24' height='24' /></a></div>
-              <div className='mr-4 opacity-60 transition-all transform hover:opacity-95 hover:scale-105'><a href='https://www.linkedin.com/company/coders-agora'><Linkedin fill='var(--agora-pink-10)' width='24' height='24' /></a></div>
+              <div className='mr-4 opacity-60 transition-all transform hover:opacity-95 hover:scale-105'>
+                <a href='https://twitter.com/CodersAgora_org' target='blank'>
+                  <Twitter fill='var(--agora-pink-10)' width='24' height='24' />
+                </a>
+              </div>
+              <div className='mr-4 opacity-60 transition-all transform hover:opacity-95 hover:scale-105'>
+                <a href='https://www.youtube.com/channel/UCfHS5Wam8fkB_Jkt9FLDgPA' target='blank'>
+                  {/* <Devto fill='var(--agora-pink-10)' width='24' height='24' /> */}
+                  <Youtube fill='var(--agora-pink-10)' width='24' height='24' />
+                </a>
+              </div>
+              <div className='mr-4 opacity-60 transition-all transform hover:opacity-95 hover:scale-105'>
+                <a href='https://www.linkedin.com/company/coders-agora' target='blank'>
+                  <Linkedin fill='var(--agora-pink-10)' width='24' height='24' />
+                </a>
+              </div>
             </div>
             <div>More info: <a href='mailto:codersagora@gmail.com'>codersagora@gmail.com</a></div>
           </div>

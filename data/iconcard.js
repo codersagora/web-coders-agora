@@ -4,7 +4,7 @@ export const ICONCARD = [{
   body: 'Comunicación casual y avisos'
 },
 {
-  src: '/img/logos/discord.svg',
+  src: '/img/logos/discord-color.svg',
   href: 'https://discord.com/invite/TUpvpaTqXx',
   body: 'Grupos de trabajo, cursos, coding and chill...'
 }
