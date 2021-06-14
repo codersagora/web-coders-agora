@@ -18,11 +18,8 @@ import { LastYoutubeVideos } from 'components/LastYoutubeVideos'
 import { ICONCARD } from 'data/iconcard'
 import axios from 'axios'
 
-// AIzaSyBwF2DsoJcl6LVYFjVVf3eSEj7NAAkWigw
-
 export async function getServerSideProps (context) {
-  const youtubeApi = 'https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCfHS5Wam8fkB_Jkt9FLDgPA&maxResults=3&order=date&type=video&key=AIzaSyBwF2DsoJcl6LVYFjVVf3eSEj7NAAkWigw'
-  // https://www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&key=AIzaSyBwF2DsoJcl6LVYFjVVf3eSEj7NAAkWigw&part=snippet,contentDetails,statistics,status
+  const youtubeApi = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCfHS5Wam8fkB_Jkt9FLDgPA&maxResults=3&order=date&type=video&key=${process.env.YOUTUBE_API}`
 
   const result = await axios.get(youtubeApi)
 
