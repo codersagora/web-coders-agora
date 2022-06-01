@@ -12,25 +12,24 @@ import { IconCard } from 'components/cards/IconCard'
 import Comparte from 'components/Icons/Comparte'
 import Share from 'components/Icons/Share'
 import Crece from 'components/Icons/Crece'
-import { LastYoutubeVideos } from 'components/LastYoutubeVideos'
 
 // DATA
 import { ICONCARD } from 'data/iconcard'
-import axios from 'axios'
+// import axios from 'axios'
 
-export async function getServerSideProps (context) {
-  const youtubeApi = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCfHS5Wam8fkB_Jkt9FLDgPA&maxResults=3&order=date&type=video&key=${process.env.YOUTUBE_API}`
+// export async function getServerSideProps (context) {
+//   const youtubeApi = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCfHS5Wam8fkB_Jkt9FLDgPA&maxResults=3&order=date&type=video&key=${process.env.YOUTUBE_API}`
 
-  const result = await axios.get(youtubeApi)
+//   const result = await axios.get(youtubeApi)
 
-  return {
-    props: {
-      videos: result.data.items
-    }
-  }
-}
+//   return {
+//     props: {
+//       videos: result.data.items
+//     }
+//   }
+// }
 
-export default function Home ({ videos }) {
+export default function Home ({ }) {
   return (
     <>
       <Head>
@@ -75,10 +74,6 @@ export default function Home ({ videos }) {
               <Crece className='mb-5' />
             </div>
           </Row>
-        </section>
-        <section className='mb-24'>
-          <h3 className='text-ca-text-black mb-8'>Nuestros últimos vídeos</h3>
-          <LastYoutubeVideos videos={videos} />
         </section>
         <section className='mb-24'>
           <h3 className='text-ca-text-black mb-8'>¿Qué hacemos?</h3>
